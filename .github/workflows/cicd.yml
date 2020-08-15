@@ -1,0 +1,26 @@
+name: "CI/CD"
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: Run install and build
+      run: |
+        set PUBLIC_URL=https://githiago-f.github.io/academy
+        yarn
+        yarn build
+
+    - name: Run deploy
+      uses: JamesIves/github-pages-deploy-action@3.5.7
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
