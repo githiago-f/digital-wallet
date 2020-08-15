@@ -1,3 +1,10 @@
 export default {
-    'logo': import('./logo.svg')
+    'activity': import('./icons/activity.svg'),
+    'bell': import('./icons/bell.svg'),
+    'config': import('./icons/config.svg'),
+    'dashboard': import('./icons/dashboard.svg'),
+    'exchange': import('./icons/exchange.svg'),
+    'logo': import('./logo.svg'),
+    'tools': import('./icons/tools.svg'),
+    'wallet': import('./icons/wallet.svg'),
 };
