@@ -4,7 +4,7 @@ const BaseTheme = createGlobalStyle`
     :root{
         /* add here all colors and dimensions */
         --primary-dark:#1F2326;
-        --secoundary-dark:#494B56;
+        --secondary-dark:#494B56;
         --light-dark:#888D97;
 
         --light-blue:#57A2ED;
