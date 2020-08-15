@@ -1,6 +1,7 @@
 # digital-wallet
 
 [![Travis CI](https://travis-ci.com/githiago-f/digital-wallet.svg?branch=master)](https://travis-ci.com/githiago-f/digital-wallet.svg?branch=master)
+
 a digital wallet project to apply react and styling concepts with Typescript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
