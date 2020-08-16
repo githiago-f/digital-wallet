@@ -6,7 +6,7 @@ export interface Props {
     subtitle?: string;
 }
 
-export const Item = ({
+export const Card = ({
     title,
     subtitle,
 }: Props) => {
