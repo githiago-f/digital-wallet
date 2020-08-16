@@ -1,11 +1,21 @@
 import React from 'react';
+import { LeftCard } from './styles';
 
-const Card = () => {
-    return(
-        <>
-            <h1>Hello World</h1>
-        </>
+export interface Props {
+    title?: string;
+    subtitle?: string;
+}
+
+export const Item = ({
+    title,
+    subtitle,
+}: Props) => {
+    return (
+        <div>
+            <LeftCard>
+                <h2>{title}</h2>
+                <h3>{subtitle}</h3>
+            </LeftCard>
+        </div>
     );
 };
-
-export default Card;
