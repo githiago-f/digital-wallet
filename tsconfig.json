@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es2020",
         "lib": [
             "dom",
             "dom.iterable",
@@ -13,14 +13,22 @@
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "module": "esnext",
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "resolveJsonModule": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "noEmit": true,
         "jsx": "react",
-        "baseUrl": "./src"
+        "baseUrl": "./src",
+        "typeRoots": [
+            "./src/@types",
+            "./node_modules/@types"
+        ]
     },
     "include": [
         "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "public"
     ]
 }
