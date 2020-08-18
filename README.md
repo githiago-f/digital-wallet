@@ -12,9 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Project Opennode](https://significa.co/showcase/opennode)
 
-![image 01](01.jpg)
+![image 01](../01.jpg)
 
-![image 02](02.jpg)
+![image 02](../02.jpg)
 
 ## Available Scripts
 
