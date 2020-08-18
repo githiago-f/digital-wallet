@@ -1,10 +1,13 @@
 env:
     browser: true
     es6: true
+    jest: true
+root: true
 extends:
     - 'eslint:recommended'
     - 'plugin:react/recommended'
     - 'plugin:@typescript-eslint/eslint-recommended'
+    - 'plugin:@typescript-eslint/recommended'
 globals:
     Atomics: readonly
     SharedArrayBuffer: readonly
@@ -12,7 +15,7 @@ parser: '@typescript-eslint/parser'
 parserOptions:
     ecmaFeatures:
         jsx: true
-    ecmaVersion: 11
+    ecmaVersion: 2020
     sourceType: module
 plugins:
     - react
@@ -30,3 +33,10 @@ rules:
     semi:
         - error
         - always
+        '@typescript-eslint/explicit-function-return-type': on
+        '@typescript-eslint/no-unused-vars': on
+        'react/jsx-filename-extension':
+            - 1
+            - extensions:
+                - ".ts"
+                - ".tsx"
