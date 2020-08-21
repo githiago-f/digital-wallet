@@ -1,10 +1,12 @@
 import React from 'react';
+import { Theme } from 'components/Theme';
 
-const Home = () => {
+const Home = (props: PageProps<{}, {}>) => {
+    console.log(props.history);
     return(
-        <>
-            <h1>Hello World</h1>
-        </>
+        <Theme>
+            <h3>Titulo da página</h3>
+        </Theme>
     );
 };
 
