@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const LateralMenu = () => {
-    return(
-        <>
-            <h1>Hello World</h1>
-        </>
-    );
+const LateralMenu = (props: LateralMenu) => {
+    const [icon] = props.item;
+    return <>{props.item}</>;
 };
 
 export default LateralMenu;
