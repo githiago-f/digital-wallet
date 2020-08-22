@@ -6,6 +6,16 @@ a digital wallet project to apply react and styling concepts with Typescript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# UI Idea from significa (studies only)
+
+[significa.co](https://significa.co/)
+
+[Project Opennode](https://significa.co/showcase/opennode)
+
+![image 01](../01.jpg)
+
+![image 02](../02.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
