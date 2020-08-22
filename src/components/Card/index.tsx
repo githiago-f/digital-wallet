@@ -1,5 +1,5 @@
 import React from 'react';
-import { LeftCard } from './styles';
+import './styles.scss';
 
 export const Card = ({
     title,
@@ -7,10 +7,10 @@ export const Card = ({
 }: ICardProps) => {
     return (
         <div>
-            <LeftCard>
+            <div className="card">
                 <h2>{title}</h2>
                 <h3>{subtitle}</h3>
-            </LeftCard>
+            </div>
         </div>
     );
 };
