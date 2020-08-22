@@ -1,5 +1,5 @@
-.card {
-    width: 50%;
+.right-card {
+    width: 45%;
     margin: 3rem;
     background-color: var(--secondary-dark);
 
@@ -8,15 +8,34 @@
     justify-content: center;
     align-items: center;
 
+    .border {
+        width: 100%;
+        height: 5px;
+        top: 0;
+        position: absolute;
+        background-color: var(--light-cian);
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: var(--light-cian);
+        }
+    }
+
     & {
         height: 200px;
         position: relative;
-        background: #2c3e50;
+        background: var(--secondary-dark);
 
         &::before {
             position: absolute;
             content: "";
-            left: 100%;
+            left: 0%;
             top: 0%;
             z-index: 10;
             width: 100px;
