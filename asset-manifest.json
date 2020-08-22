@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.js": "/digital-wallet/static/js/main.73e222f8.chunk.js",
-    "main.js.map": "/digital-wallet/static/js/main.73e222f8.chunk.js.map",
+    "main.css": "/digital-wallet/static/css/main.0f33e885.chunk.css",
+    "main.js": "/digital-wallet/static/js/main.cce3bcb6.chunk.js",
+    "main.js.map": "/digital-wallet/static/js/main.cce3bcb6.chunk.js.map",
     "runtime-main.js": "/digital-wallet/static/js/runtime-main.847f7b05.js",
     "runtime-main.js.map": "/digital-wallet/static/js/runtime-main.847f7b05.js.map",
-    "static/js/2.cd50b5d3.chunk.js": "/digital-wallet/static/js/2.cd50b5d3.chunk.js",
-    "static/js/2.cd50b5d3.chunk.js.map": "/digital-wallet/static/js/2.cd50b5d3.chunk.js.map",
+    "static/js/2.2c20376f.chunk.js": "/digital-wallet/static/js/2.2c20376f.chunk.js",
+    "static/js/2.2c20376f.chunk.js.map": "/digital-wallet/static/js/2.2c20376f.chunk.js.map",
     "index.html": "/digital-wallet/index.html",
-    "precache-manifest.28e1ab89e2aa75d81b561caba6945989.js": "/digital-wallet/precache-manifest.28e1ab89e2aa75d81b561caba6945989.js",
+    "precache-manifest.4c2fbd8fa439ee887245584beaa1fce6.js": "/digital-wallet/precache-manifest.4c2fbd8fa439ee887245584beaa1fce6.js",
     "service-worker.js": "/digital-wallet/service-worker.js",
-    "static/js/2.cd50b5d3.chunk.js.LICENSE.txt": "/digital-wallet/static/js/2.cd50b5d3.chunk.js.LICENSE.txt"
+    "static/css/main.0f33e885.chunk.css.map": "/digital-wallet/static/css/main.0f33e885.chunk.css.map",
+    "static/js/2.2c20376f.chunk.js.LICENSE.txt": "/digital-wallet/static/js/2.2c20376f.chunk.js.LICENSE.txt",
+    "static/media/exchange.svg": "/digital-wallet/static/media/exchange.58165cbd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.847f7b05.js",
-    "static/js/2.cd50b5d3.chunk.js",
-    "static/js/main.73e222f8.chunk.js"
+    "static/js/2.2c20376f.chunk.js",
+    "static/css/main.0f33e885.chunk.css",
+    "static/js/main.cce3bcb6.chunk.js"
   ]
 }
