@@ -1,14 +1,14 @@
 import React from 'react';
 import { Routes } from 'app/routes';
 import BaseTheme from 'components/StyleBase';
-import { Card } from 'components/Card';
+import { Cards } from 'components/Cards';
 
 function App() {
     return (
         <>
             <BaseTheme />
             <Routes />
-            <Card title="titulo" subtitle="subtitle"></Card>
+            <Cards title="titulo" subtitle="subtitle"></Cards>
         </>
     );
 }
