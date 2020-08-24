@@ -6,6 +6,7 @@ extends:
   - 'eslint:recommended'
   - 'plugin:react/recommended'
   - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:testing-library/react'
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
@@ -18,6 +19,7 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
+  - 'testing-library'
 rules:
   indent:
     - error
