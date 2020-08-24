@@ -35,7 +35,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "test-lint": "eslint \"**/*.ts*\" --ignore-pattern node_modules/ --ignore-pattern **/__snapshots__/*",
+        "test-for-build": "yarn test  --watchAll=false && test-lint"
     },
     "eslintConfig": {
         "extends": "react-app"
