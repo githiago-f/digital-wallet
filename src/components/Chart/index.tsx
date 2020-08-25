@@ -4,7 +4,7 @@ import { useChartHooks, useLineHooks } from './hooks';
 import './styles.scss';
 
 const Chart = () => {
-    const { labels } = useChartHooks({ labels: ['Jan', 'Fev', 'Abr', 'Mar', 'Mai', 'Jun', 'Jul'] });
+    const { labels } = useChartHooks();
 
     const { line: dollarLine } = useLineHooks({
         label: 'dollar',

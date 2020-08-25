@@ -13,6 +13,10 @@ export const useChartHooks = (config?: TChartConfig) => {
     useEffect(()=> {
         if(config && config.labels) {
             setLabels(config.labels);
+        } else {
+            mockRequest(100)
+                .then(res => setLabels(res.map(i=>i.toString(32))))
+                .catch(console.error);
         }
     }, [ config ]);
 
