@@ -1,9 +1,6 @@
 import React from 'react';
+import Chart from 'components/Chart';
 
-const Home = () => {
-    return(
-        <h1>Hello World</h1>
-    );
-};
+const Home = () => <Chart/>;
 
 export default Home;

@@ -5,7 +5,7 @@ import Home from 'pages/Home';
 export const Routes = () => {
     return (
         <>
-            <Router>
+            <Router basename={'digital-wallet'}>
                 <Route exact path="/" component={Home}/>
             </Router>
         </>
