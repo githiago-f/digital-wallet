@@ -10,10 +10,4 @@ describe('#Home screen', () => {
     it('should render propely', () => {
         expect(screen).toMatchSnapshot();
     });
-
-    it('should have a hello world ', () => {
-        const title = screen.getByText('Hello World');
-
-        expect(title).toBeInTheDOM();
-    });
 });
