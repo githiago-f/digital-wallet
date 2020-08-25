@@ -1,10 +1,9 @@
 import React from 'react';
 import { Template } from 'components/Template';
 
-const Home = (props: PageProps<{}, {}>) => (
+const Home = () => (
     <Template>
-        <h3>Titulo da página</h3>
-        {props.match.params}
+        <h3>Conteúdo da página</h3>
     </Template>
 );
 
