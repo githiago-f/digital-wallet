@@ -1,0 +1,57 @@
+.card {
+    width: 45%;
+    margin: 3rem;
+    background-color: var(--secondary-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .border {
+        width: 100%;
+        height: 5px;
+        top: 0;
+        position: absolute;
+        background-color: var(--light-yellow);
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: var(--light-yellow);
+        }
+    }
+
+    & {
+        height: 200px;
+        position: relative;
+        background: var(--secondary-dark);
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: var(--light-yellow);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 100%;
+            top: 0%;
+            z-index: 10;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--primary-dark);
+            transform: translateX(-50%) translateY(50%);
+            bottom: 0px;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 
-declare type PropsBase<T = Record<string, unknown>> = React.PropsWithChildren<T>;
+declare type PropsBase<T extends Object> = React.PropsWithChildren<T>;
 
-declare type PageProps<T = {}, RT = {}> =
+declare type PageProps<T extends Object, RT extends Object> =
     import('react-router-dom').RouteComponentProps<T> &
     React.Props<RT>;
