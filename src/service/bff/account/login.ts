@@ -1,11 +1,11 @@
 import { AxiosInstance } from 'axios';
-import { RequestObject } from '../../types';
+import { TRequestObject } from '../../@types/service-with-hook';
 
 export interface LoginResponse {
   token: string;
 }
 
-export interface BffIntegration extends RequestObject<BffIntegration> {
+export interface BffIntegration extends TRequestObject<BffIntegration> {
   login: (account: string, password: string) => Promise<LoginResponse>;
 }
 

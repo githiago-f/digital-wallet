@@ -3,7 +3,7 @@ import {
     useReducer,
 } from 'react';
 
-import { RequestObject, keys, Generic } from './types';
+import { TRequestObject, TKeys, TGeneric } from './@types/service-with-hook';
 
 // Main idea of this hook
 // service to create the request
@@ -84,10 +84,10 @@ const reducer: Reducer<ApiRequestState, apiRequestActions> = (prevState, action)
     };
 };
 
-const prepareObject = <T extends RequestObject<T>> (requestServiceModel: T,
+const prepareObject = <T extends TRequestObject<T>> (requestServiceModel: T,
     dispatch: React.Dispatch<apiRequestActions>): T => {
-    const serviceModelKeys = Object.keys(requestServiceModel) as keys<T>[];
-    const refillObject: Generic = {};
+    const serviceModelKeys = Object.keys(requestServiceModel) as TKeys<T>[];
+    const refillObject: TGeneric = {};
 
     serviceModelKeys.forEach((key) => {
         refillObject[key as string] = async (...args: T[keyof T][]) => {
@@ -108,7 +108,7 @@ const prepareObject = <T extends RequestObject<T>> (requestServiceModel: T,
     return refillObject as T;
 };
 
-export default <T extends RequestObject<T>> (requestModel: T) => {
+export default <T extends TRequestObject<T>> (requestModel: T) => {
     const [state, dispatch] = useReducer(reducer, defaultState, init);
 
     return {
