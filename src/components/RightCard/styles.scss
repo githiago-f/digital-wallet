@@ -1,7 +1,6 @@
 .right-card {
     width: 45%;
-    margin: 3rem;
-    background-color: var(--secondary-dark);
+    min-width: 500px;
 
     display: flex;
     flex-direction: column;
@@ -28,14 +27,14 @@
     }
 
     & {
-        height: 200px;
+        height: 170px;
         position: relative;
         background: var(--secondary-dark);
 
         &::before {
             position: absolute;
             content: "";
-            left: 0%;
+            left: -0.95%;
             top: 0%;
             z-index: 10;
             width: 100px;
